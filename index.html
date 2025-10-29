@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type X - Master the Keyboard</title>
+    <link rel="icon" type="image/jpeg" href="typex logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="typex logo.jpg" alt="Type X Logo" class="top-logo">
+            <div class="logo-container">
+                <h1 class="logo">Type X</h1>
+                <p class="logo-subtitle">Master your keyboard</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="hero-section">
+                <h2 class="tagline">Type X: Master the Keyboard.</h2>
+                <div class="level-buttons">
+                    <button class="level-btn" data-level="beginner">Beginner</button>
+                    <button class="level-btn" data-level="experienced">Experienced</button>
+                    <button class="level-btn" data-level="pro">Pro</button>
+                </div>
+                <div class="nav-links">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+            </div>
+
+            <div class="typing-test hidden" id="typing-test">
+                <div class="test-header">
+                    <div class="stats">
+                        <span class="stat">Time: <span id="timer">60</span>s</span>
+                        <span class="stat">WPM: <span id="wpm">0</span></span>
+                        <span class="stat">Accuracy: <span id="accuracy">100</span>%</span>
+                    </div>
+                </div>
+                <div class="text-display" id="text-display"></div>
+                <textarea class="typing-input" id="typing-input" placeholder="Start typing..."></textarea>
+                <div class="test-controls">
+                    <button class="control-btn" id="restart-btn">Restart</button>
+                    <button class="control-btn" id="home-btn">Home</button>
+                </div>
+            </div>
+
+            <div class="result-overlay hidden" id="result-overlay">
+                <div class="result-card">
+                    <h3 class="result-title">Test Complete!</h3>
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <span class="result-label">WPM</span>
+                            <span class="result-value" id="final-wpm">0</span>
+                        </div>
+                        <div class="result-stat">
+                            <span class="result-label">Accuracy</span>
+                            <span class="result-value" id="final-accuracy">100%</span>
+                        </div>
+                        <div class="result-stat">
+                            <span class="result-label">Time</span>
+                            <span class="result-value" id="final-time">60s</span>
+                        </div>
+                    </div>
+                    <div class="result-buttons">
+                        <button class="result-btn" id="restart-result-btn">Restart</button>
+                        <button class="result-btn" id="next-level-btn">Next Level</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="https://github.com/CodeofSush" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/sushantt.exe/" target="_blank">Instagram</a>
+                <a href="mailto:contactsushantsawant@gmail.com" target="_blank">Email</a>
+                <a href="terms.html" target="_blank">Terms of Service</a>
+                <a href="privacy.html" target="_blank">Privacy Policy</a>
+                <a href="disclaimer.html" target="_blank">Disclaimer</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
